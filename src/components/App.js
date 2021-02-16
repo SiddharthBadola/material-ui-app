@@ -82,8 +82,26 @@ function App() {
               />
             )}
           />
-          <Route exact path="/contact" component={() => <h3>Contact</h3>} />
-          <Route exact path="/estimate" component={() => <h3>Estimate</h3>} />
+          <Route
+            exact
+            path="/contact"
+            component={() => (
+              <h3 style={{ height: "250px" }}>
+                Contact
+                <br /> Under Construction
+              </h3>
+            )}
+          />
+          <Route
+            exact
+            path="/estimate"
+            component={() => (
+              <h3 style={{ height: "250px" }}>
+                Estimate
+                <br /> Under Construction
+              </h3>
+            )}
+          />
           <Route
             exact
             path="/"
