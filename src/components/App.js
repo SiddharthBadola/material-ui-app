@@ -11,6 +11,7 @@ import CustomSoftware from "./ui/CustomSoftware";
 import MobileApps from "./ui/MobileApps";
 import Websites from "./ui/Websites";
 import Revolution from "./ui/Revolution";
+import Contact from "./ui/Contact";
 
 function App() {
   // For active tab
@@ -85,11 +86,12 @@ function App() {
           <Route
             exact
             path="/contact"
-            component={() => (
-              <h3 style={{ height: "250px" }}>
-                Contact
-                <br /> Under Construction
-              </h3>
+            component={(props) => (
+              <Contact
+                {...props}
+                setValue={setValue}
+                setSelectedIndex={setSelectedIndex}
+              />
             )}
           />
           <Route
